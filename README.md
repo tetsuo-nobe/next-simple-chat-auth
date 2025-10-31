@@ -1,5 +1,8 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+
+ec2-13-237-168-76.ap-southeast-2.compute.amazonaws.com
+
 ## Getting Started
 
 First, run the development server:

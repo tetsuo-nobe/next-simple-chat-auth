@@ -24,3 +24,15 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Hide Next.js development overlay icons */
+[data-nextjs-toast-errors-parent],
+[data-nextjs-dialog-overlay],
+.__next-dev-overlay-left,
+#__next-build-watcher,
+nextjs-portal,
+[data-nextjs-scroll-focus-boundary] + div[style*="position: fixed"],
+div[style*="position: fixed"][style*="bottom: 30px"][style*="right: 30px"],
+div[style*="position: fixed"][style*="z-index: 99999"] {
+  display: none !important;
+}
