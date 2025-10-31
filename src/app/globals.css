@@ -37,6 +37,18 @@ body {
   font-weight: bold;
 }
 
+.clear-button {
+  background-color: #e5e7eb;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+.clear-button:hover {
+  font-weight: bold;
+}
+
 /* Hide Next.js development overlay icons */
 [data-nextjs-toast-errors-parent],
 [data-nextjs-dialog-overlay],

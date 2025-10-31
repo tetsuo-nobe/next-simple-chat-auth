@@ -96,15 +96,22 @@ export default function Chat() {
     }
   };
 
+  const clearMessages = () => {
+    setMessages([]);
+  };
+
   return (
-     <Authenticator loginMechanisms={['email']}>
+    <Authenticator loginMechanisms={['email']}>
     {({ signOut, user }) => (
     <div className="flex flex-col h-screen bg-gray-50">
-      <header className="bg-white border-b px-4 py-3">
+      <header className="bg-white border-b px-4 py-3 flex justify-between items-center">
         <h1 className="text-xl font-semibold text-gray-800">Next Simple Chat</h1>
         <div style={{ textAlign: 'right' }}>
           <p>ユーザー ID :{user?.signInDetails?.loginId}</p>
-          <button onClick={signOut} className="signout-button">サインアウト</button>
+          <div className="flex gap-2">
+            <button onClick={clearMessages} className="clear-button">クリア</button>
+            <button onClick={signOut} className="signout-button">サインアウト</button>
+          </div>
         </div>
       </header>
       <div className="flex-1 overflow-y-auto p-4 space-y-4">
