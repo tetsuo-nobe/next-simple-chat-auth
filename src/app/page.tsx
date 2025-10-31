@@ -103,7 +103,7 @@ export default function Chat() {
       <header className="bg-white border-b px-4 py-3">
         <h1 className="text-xl font-semibold text-gray-800">Next Simple Chat</h1>
         <div style={{ textAlign: 'right' }}>
-          <p>ユーザー ID:{user?.signInDetails?.loginId}</p>
+          <p>ユーザー ID :{user?.signInDetails?.loginId}</p>
           <button onClick={signOut}>サインアウト</button>
         </div>
       </header>
