@@ -104,7 +104,7 @@ export default function Chat() {
         <h1 className="text-xl font-semibold text-gray-800">Next Simple Chat</h1>
         <div style={{ textAlign: 'right' }}>
           <p>ユーザー ID :{user?.signInDetails?.loginId}</p>
-          <button onClick={signOut}>サインアウト</button>
+          <button onClick={signOut} className="signout-button">サインアウト</button>
         </div>
       </header>
       <div className="flex-1 overflow-y-auto p-4 space-y-4">
